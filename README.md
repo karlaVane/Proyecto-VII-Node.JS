@@ -105,4 +105,4 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 
 
 ---
-⌨️ con ❤️ por [González Diego, Moyón Karla, Parrales Leonel, Velasco Sebastián](https://github.com/Villanuevand) 😊
+⌨️ con ❤️ por [González Diego, Moyón Karla, Parrales Leonel, Velasco Sebastián](https://github.com/karlaVane/Proyecto-VII-Node.JS) 😊
