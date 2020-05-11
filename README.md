@@ -14,7 +14,7 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 ### Pre-requisitos 📋
 
-_Node.js
+ Intalación de Node.js
 
 ```
 sudo apt-get install curl
