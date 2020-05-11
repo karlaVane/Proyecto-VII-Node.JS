@@ -14,10 +14,12 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Node.js
 
 ```
-Da un ejemplo
+sudo apt-get install curl
+curl -sLhttps://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install nodejs
 ```
 
 ### Instalación 🔧
