@@ -268,7 +268,7 @@ const comprobarPais = (cod_Pais) => {
         return;
       }
     });
-    reject("País no encontrado");
+    reject(`El codigo de país: "${cod_Pais}" no fue encontrado`);
   });
 };
 
@@ -282,7 +282,7 @@ const comprobarAnio = (anio) => {
         return;
       }
     });
-    reject("Anio no encontrado");
+    reject(`El año: "${anio}" no fue encontrado`);
   });
 };
 
