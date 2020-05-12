@@ -17,6 +17,21 @@ let publicar = {
 }
 
 let guardar = {
+    file: {
+        demand: true,
+        alias: 'f',
+        desc: 'Permite establecer el path del archivo CSV que contiene los datos a analizar'
+    },
+    country: {
+        demand: true,
+        alias: 'c',
+        desc: ' Permite determinar el país a analizar a través de su código'
+    },
+    year: {
+        default: 2018,
+        alias: 'y',
+        desc: 'Permite especificar el año para el cual se requiere las estadísticas'
+    },
     out: {
         demand: true, // aqui va el path
         alias: 'o',
