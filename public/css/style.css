@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    font-family: 'Rokkitt', serif;
+    font-size: 100%;
+    background-color: #F6F4B7;
+    position: relative;
+    min-height: 100vh;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #232328;
+    color: white;
+    font-size: 100%;
+    padding: 5px;
+    text-align: center;
+}
