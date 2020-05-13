@@ -3,11 +3,16 @@ let datos = [];
 let crearArchivo = (paisesMay, pmedia, paisesMen, medGlob, top, nomArch) => {
     return new Promise((resolve, reject) => {
 
-        datos.push(paisesMay);
+        datos.push('Media Global: ');
+        datos.push(medGlob);
+        datos.push(' Media Pais: ');
         datos.push(pmedia);
-        datos.push(`Media Global: ${medGlob}`);
+        datos.push(' Paises por encima de la Suscripcion: ');
+        datos.push(paisesMay);
+        datos.push(' Paises por debajo de la Suscripcion: ');
         datos.push(paisesMen);
-        datos.push(`TOP-5\n ${top}`);
+        datos.push(' TOP-5: ');
+        datos.push(top);
         console.log(`Nombre del archivo ${nomArch}`);
         let data = JSON.stringify(datos);
         fs.writeFile(`resultados/${nomArch}.json`, data, (err) => {
@@ -21,13 +26,3 @@ let crearArchivo = (paisesMay, pmedia, paisesMen, medGlob, top, nomArch) => {
 module.exports = {
     crearArchivo
 }
-
-/*      datos += `${paisesMay}\n`;
-        datos += `-------------------${pmedia}---------------------`;
-        datos += `Media Global: ${medGlob}\n`;
-        datos += `${paisesMen}\n`;
-        datos += `*****TOP-5***** \n`;
-        datos += `*************** \n`;
-        datos += `${top}\n`;
-        console.log(`Nombre del archivo ${nomArch}`);
-*/
