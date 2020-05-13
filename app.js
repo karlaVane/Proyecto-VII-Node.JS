@@ -20,13 +20,25 @@ const menu = () => {
     switch (comando) {
         case "publicar":
             // node app.js publicar -f="db/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv" -c="ECU" -y=1997
+            console.log("------------------------------------------------------".rainbow);
+            console.log((`Media Global del año ${argv.year}:`.cyan), (`${data.mediaGlobal}`));
+            console.log("------------------------------------------------------".rainbow);
+            console.log((`Suscripciones de ${argv.country}:`.cyan), (`${data.mediaPais}`));
+            if (data.mediaPais > data.mediaGlobal) {
+                console.log(`La media de ${argv.country} es mayor a la media mundial`.blue);
+            } else {
+                console.log(`La media de ${argv.country} es menor a la media mundial`.red);
+            }
+            console.log("------------------------------------------------------".rainbow);
+            console.log(`Paises por encima de la suscripcion de ${argv.country}:`.magenta);
             console.log(data.paisesAdyacentes.mayores);
-            console.log(`-------------------${data.mediaPais}---------------------`);
+            console.log("------------------------------------------------------".rainbow);
+            console.log(`Paises por debajo de la suscripcion de ${argv.country}:`.cyan);
             console.log(data.paisesAdyacentes.menores);
-            console.log(`Media Global: ${data.mediaGlobal}`);
-            console.log(`*****TOP-5*****`);
+            console.log("------------------------------------------------------".rainbow);
+            console.log(`TOP-5 de Suscripciones en el año ${argv.year}`.magenta);
             console.log(data.top);
-            console.log("***FIN DEL PROGRAMA***");
+            console.log("----------------------FIN DEL PROGRAMA-------------------".rainbow);
             app.use(router.get('/', (req, res) => {
                 res.render('index.html', { title: 'Suscripciones a telefonía celular móvil' });
             }));
