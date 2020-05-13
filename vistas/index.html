@@ -12,8 +12,11 @@
 
 <body>
     <%-include('plantillas/navigation.html')%>
-
-        <h3>Estadísticas de suscripciones de telefonía celular</h3>
+        <br>
+        <center>
+            <h3><b>Estadísticas de suscripciones de telefonía celular</b></h3>
+        </center>
+        <hr>
         <label id="hellow"></label>
         <!--
         <script type="text/javascript">
@@ -24,10 +27,95 @@
         <div class="container">
             <div class="main row">
                 <div class="col-md-7">
+                    <ul>
+                        <li><b>Media global del año <label id="anio">(aqui va el año)</label></b>: <label id=m ediaGlobal>(aqui va media global)</label> <br></li>
+                        <li><b>Suscripciones de <label id="pais">aqui va el cod pais</label>:</b> recibir dato</li>
+                    </ul>
                 </div>
                 <div class="col-md-5">
                     <%-include('plantillas/carousel.html')%>
                 </div>
+            </div>
+            <br>
+            <hr>
+            <div class="container">
+                <div class="main row">
+
+                    <div class="col-md-6">
+                        <center><b id="subtitulos">Paises por encima de la suscripción de <label id="pais">obtener cod pais</label></b></center>
+                        <div id="probando"></div>
+                        <script>
+                            let hola = "<table class=\"table\"> <thead class=\"thead-dark\">";
+                            hola += "<tr> <th scope=\"col\"> Suscripciones</th><th scope=\"col\">País</th><th scope=\"col\">Código País</th>";
+                            hola += "</tr></thead><tbody>";
+                            for (let i = 0; i < 5; i++) {
+                                hola += `<tr> \n`
+                                for (let k = 0; k < 3; k++) {
+                                    hola += `<td> ${k} </td>\n`
+                                }
+                                hola += "</tr>\n";
+
+                            }
+                            hola += "</tbody></table>"
+                            document.getElementById("probando").innerHTML = hola
+                        </script>
+                    </div>
+
+                    <div class="col-md-6">
+                        <center><b id="subtitulos1">Paises por debajo de la suscripción de <label id="pais">obtener cod pais</label></b></center>
+                        <div id="tabla2"></div>
+                        <script>
+                            let hola1 = "<table class=\"table\"> <thead class=\"thead-dark\">";
+                            hola1 += "<tr> <th scope=\"col\"> Suscripciones</th><th scope=\"col\">País</th><th scope=\"col\">Código País</th>";
+                            hola1 += "</tr></thead><tbody>";
+                            for (let i = 0; i < 5; i++) {
+                                hola1 += `<tr> \n`
+                                for (let k = 0; k < 3; k++) {
+                                    hola1 += `<td> ${k} </td>\n`
+                                }
+                                hola1 += "</tr>\n";
+
+                            }
+                            hola1 += "</tbody></table>"
+                            document.getElementById("tabla2").innerHTML = hola1
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <!---->
+            <hr>
+            <div class="container">
+                <div class="main row">
+
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-6">
+                        <center><b id="subtitulos2">TOP-5 de Suscripciones en el año <label id="anio">obtener año</label></b></center>
+                        <div id="tablatop"></div>
+                        <script>
+                            let hola2 = "<table class=\"table\"> <thead class=\"thead-dark\">";
+                            hola2 += "<tr> <th scope=\"col\"> Suscripciones</th><th scope=\"col\">País</th><th scope=\"col\">Código País</th>";
+                            hola2 += "</tr></thead><tbody>";
+                            for (let i = 0; i < 5; i++) {
+                                hola2 += `<tr> \n`
+                                for (let k = 0; k < 3; k++) {
+                                    hola2 += `<td> ${k} </td>\n`
+                                }
+                                hola2 += "</tr>\n";
+
+                            }
+                            hola2 += "</tbody></table>"
+                            document.getElementById("tablatop").innerHTML = hola2
+                        </script>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                </div>
+
+
+
+
             </div>
 
 

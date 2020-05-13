@@ -1,20 +1,43 @@
 body {
-    text-align: center;
     font-family: 'Rokkitt', serif;
     font-size: 100%;
-    background-color: #F6F4B7;
+    /*background-color: #F6F4B7;*/
+    background-color: white;
     position: relative;
     min-height: 100vh;
 }
 
+h3 {
+    color: #2A45C1;
+}
+
+#subtitulos {
+    color: #F218BA;
+    font-size: 20px;
+}
+
+#subtitulos1 {
+    color: #238A0A;
+    font-size: 20px;
+}
+
+#subtitulos2 {
+    color: #9415E1;
+    font-size: 20px;
+}
+
+li {
+    font-size: 17px;
+}
+
 footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background-color: #232328;
     color: white;
     font-size: 100%;
     padding: 5px;
+    text-align: center;
+}
+
+table {
     text-align: center;
 }
