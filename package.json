@@ -1,16 +1,19 @@
 {
-  "name": "proyecto1",
-  "version": "1.0.0",
-  "description": "Plataformar Web P56 - Proyecto 1",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Leonel",
-  "license": "ISC",
-  "dependencies": {
-    "colors": "^1.4.0",
-    "neat-csv": "^5.2.0",
-    "yargs": "^15.3.1"
-  }
+    "name": "proyecto1",
+    "version": "1.0.0",
+    "description": "Plataformar Web P56 - Proyecto 1",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Leonel,Karla, Sebastián, Diego",
+    "license": "ISC",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "ejs": "^3.1.2",
+        "express": "^4.17.1",
+        "morgan": "^1.10.0",
+        "neat-csv": "^5.2.0",
+        "yargs": "^15.3.1"
+    }
 }
