@@ -41,20 +41,38 @@ const menu = () => {
             console.log(data.top);
             console.log("----------------------FIN DEL PROGRAMA-------------------".rainbow);
 
-            tabla = "<table class=\"table\"> <thead class=\"thead-dark\">";
-            tabla += "<tr> <th scope=\"col\"> Suscripciones</th><th scope=\"col\">País</th><th scope=\"col\">Código País</th>";
-            tabla += "</tr></thead><tbody>";
-
+            mayores = "<table class=\"table\"> <thead class=\"thead-dark\">";
+            mayores += "<tr> <th scope=\"col\"> Suscripciones</th><th scope=\"col\">País</th><th scope=\"col\">Código País</th>";
+            mayores += "</tr></thead><tbody>";
             data.paisesAdyacentes.mayores.forEach((element) => {
-                tabla = tabla + "<tr>";
-                tabla = tabla + `<td>${element[0]}</td><td>${element[1]}</td><td>${element[2]}</td>`;
-                tabla = tabla + "</tr>";
+                mayores = mayores + "<tr>";
+                mayores = mayores + `<td>${element[0]}</td><td>${element[1]}</td><td>${element[2]}</td>`;
+                mayores = mayores + "</tr>";
             });
-            tabla = tabla + "</tbody></table>";
+            mayores = mayores + "</tbody></table>";
 
+            menores = "<table class=\"table\"> <thead class=\"thead-dark\">";
+            menores += "<tr> <th scope=\"col\"> Suscripciones</th><th scope=\"col\">País</th><th scope=\"col\">Código País</th>";
+            menores = "</tr></thead><tbody>";
+            data.paisesAdyacentes.menores.forEach((element) => {
+                menores = menores + "<tr>";
+                menores = menores + `<td>${element[0]}</td><td>${element[1]}</td><td>${element[2]}</td>`;
+                menores = menores + "</tr>";
+            });
+            menores = menores + "</tbody></table>";
+
+            top = "<table class=\"table\"> <thead class=\"thead-dark\">";
+            top += "<tr> <th scope=\"col\"> Suscripciones</th><th scope=\"col\">País</th><th scope=\"col\">Código País</th>";
+            top = "</tr></thead><tbody>";
+            data.top.forEach((element) => {
+                top = top + "<tr>";
+                top = top + `<td>${element[0]}</td><td>${element[1]}</td><td>${element[2]}</td>`;
+                top = top + "</tr>";
+            });
+            top = top + "</tbody></table>";
             app.use(
                 router.get("/", (req, res) => {
-                    res.render("index.html", { title: "Suscripciones a telefonía celular móvil", data: data, argv: argv, mayores: tabla });
+                    res.render("index.html", { title: "Suscripciones a telefonía celular móvil", data: data, argv: argv, mayores: mayores, menores: menores, top: top });
                 })
             );
             // static files
