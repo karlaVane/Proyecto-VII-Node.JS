@@ -282,7 +282,7 @@ const comprobarAnio = (anio) => {
         return;
       }
     });
-    reject(`El año: "${anio}" no fue encontrado`);
+    reject(`El año: "${anio}"0qq no fue encontrado`);
   });
 };
 
