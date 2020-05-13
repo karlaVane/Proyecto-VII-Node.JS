@@ -20,6 +20,7 @@ const menu = () => {
     switch (comando) {
         case "publicar":
             // node app.js publicar -f="db/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv" -c="ECU" -y=1997
+            // node app.js publicar -f="/home/leonel/Descargas/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv" -c="ECU" -y=1997
             console.log("------------------------------------------------------".rainbow);
             console.log((`Media Global del año ${argv.year}:`.cyan), (`${data.mediaGlobal}`));
             console.log("------------------------------------------------------".rainbow);
