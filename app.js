@@ -40,7 +40,7 @@ const menu = () => {
             console.log(data.top);
             console.log("----------------------FIN DEL PROGRAMA-------------------".rainbow);
             app.use(router.get('/', (req, res) => {
-                res.render('index.html', { title: 'Suscripciones a telefonía celular móvil' });
+                res.render('index.html', { title: 'Suscripciones a telefonía celular móvil', data: data, argv: argv });
             }));
             // static files
             app.use(express.static(path.join(__dirname, 'public')))
@@ -52,7 +52,7 @@ const menu = () => {
             break;
         case "guardar":
             // node app.js guardar -f="db/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv" -c="ECU" -y=1997 -o="HolaMundo
-            console.log("Generando Archivo");
+            console.log("Generando Archivo...".blue);
             crearArchivo(data.paisesAdyacentes.mayores, data.mediaPais, data.paisesAdyacentes.menores, data.mediaGlobal, data.top, argv.out)
                 .then(mensaje => console.log(colors.green(mensaje)))
                 .catch(err => console.log(colors.red(err)));

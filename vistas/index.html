@@ -28,7 +28,8 @@
             <div class="main row">
                 <div class="col-md-7">
                     <ul>
-                        <li><b>Media global del año <label id="anio">(aqui va el año)</label></b>: <label id=m ediaGlobal>(aqui va media global)</label> <br></li>
+                        <li><b>Media global del año <label id="anio"><%=argv.year%></label></b>: <label id=m ediaGlobal>(aqui va media global)</label> <br></li>
+
                         <li><b>Suscripciones de <label id="pais">aqui va el cod pais</label>:</b> recibir dato</li>
                     </ul>
                 </div>
@@ -48,10 +49,12 @@
                             let hola = "<table class=\"table\"> <thead class=\"thead-dark\">";
                             hola += "<tr> <th scope=\"col\"> Suscripciones</th><th scope=\"col\">País</th><th scope=\"col\">Código País</th>";
                             hola += "</tr></thead><tbody>";
+
                             for (let i = 0; i < 5; i++) {
                                 hola += `<tr> \n`
                                 for (let k = 0; k < 3; k++) {
                                     hola += `<td> ${k} </td>\n`
+
                                 }
                                 hola += "</tr>\n";
 
@@ -97,10 +100,11 @@
                             let hola2 = "<table class=\"table\"> <thead class=\"thead-dark\">";
                             hola2 += "<tr> <th scope=\"col\"> Suscripciones</th><th scope=\"col\">País</th><th scope=\"col\">Código País</th>";
                             hola2 += "</tr></thead><tbody>";
+
                             for (let i = 0; i < 5; i++) {
                                 hola2 += `<tr> \n`
                                 for (let k = 0; k < 3; k++) {
-                                    hola2 += `<td> ${k} </td>\n`
+                                    hola2 += `<td> ${i} </td>\n`
                                 }
                                 hola2 += "</tr>\n";
 
@@ -115,8 +119,9 @@
 
 
 
-
+                <%=data.top%>
             </div>
+
 
 
             <!--footer-->
