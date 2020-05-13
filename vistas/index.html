@@ -44,24 +44,7 @@
 
                     <div class="col-md-6">
                         <center><b id="subtitulos">Paises por encima de la suscripción de <label id="pais">obtener cod pais</label></b></center>
-                        <div id="probando"></div>
-                        <script>
-                            let hola = "<table class=\"table\"> <thead class=\"thead-dark\">";
-                            hola += "<tr> <th scope=\"col\"> Suscripciones</th><th scope=\"col\">País</th><th scope=\"col\">Código País</th>";
-                            hola += "</tr></thead><tbody>";
-
-                            for (let i = 0; i < 5; i++) {
-                                hola += `<tr> \n`
-                                for (let k = 0; k < 3; k++) {
-                                    hola += `<td> ${k} </td>\n`
-
-                                }
-                                hola += "</tr>\n";
-
-                            }
-                            hola += "</tbody></table>"
-                            document.getElementById("probando").innerHTML = hola
-                        </script>
+                        <%-mayores%>
                     </div>
 
                     <div class="col-md-6">
@@ -118,11 +101,11 @@
                 </div>
 
 
-                <%-mayores%>
 
-                
+
+
             </div>
-            
+
             <!--footer-->
             <%-include('plantillas/footer.html')%>
                 <!--librerias-->
