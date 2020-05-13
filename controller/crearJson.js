@@ -12,7 +12,7 @@ let crearArchivo = (paisesMay, pmedia, paisesMen, medGlob, top, nomArch) => {
         datos += `${top}\n`;
         console.log(`Nombre del archivo ${nomArch}`);
 
-        fs.writeFile(`resultados/${pmedia[1]}.json`, datos, (err) => {
+        fs.writeFile(`resultados/${nomArch}.json`, datos, (err) => {
             if (err)
                 reject(err);
             else
