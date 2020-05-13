@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const router = express.Router();
+var opn = require('opn');
 
 app.set("port", 3000);
 app.set("views", path.join(__dirname, "../vistas"));
@@ -21,6 +22,7 @@ const startServer = (informacion) => {
   app.listen(app.get("port"), () => {
     console.log(`Server on port`, app.get("port"));
   });
+  opn('http://localhost:3000/');
 };
 
 module.exports = {
