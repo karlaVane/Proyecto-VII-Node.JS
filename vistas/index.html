@@ -17,20 +17,19 @@
             <h3><b>Estadísticas de suscripciones de telefonía celular</b></h3>
         </center>
         <hr>
-        <label id="hellow"></label>
-        <!--
-        <script type="text/javascript">
-            /* var d = <= datos>;
-                        document.getElementById("hellow").innerHTML = d;*/
-        </script>
-        -->
+
         <div class="container">
             <div class="main row">
                 <div class="col-md-7">
                     <ul>
-                        <li><b>Media global del año <label id="anio"><%=argv.year%></label></b>: <label id=m ediaGlobal>(aqui va media global)</label> <br></li>
+                        <li><b>Media global del año <label id="anio"><%=argv.year%></label></b>:
+                            <%=data.mediaGlobal%> <br></li>
 
-                        <li><b>Suscripciones de <label id="pais">aqui va el cod pais</label>:</b> recibir dato</li>
+                        <li><b>Suscripciones de <%=argv.country%>:</b>
+                            <%=data.mediaPais[0]%>
+                                <br>
+                                <%=mensaje%>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-5">
@@ -43,12 +42,12 @@
                 <div class="main row">
 
                     <div class="col-md-6">
-                        <center><b id="subtitulos">Paises por encima de la suscripción de <label id="pais">obtener cod pais</label></b></center>
+                        <center><b id="subtitulos">Paises por encima de la suscripción de <%=argv.country%></b></center>
                         <%-mayores%>
                     </div>
 
                     <div class="col-md-6">
-                        <center><b id="subtitulos1">Paises por debajo de la suscripción de <label id="pais">obtener cod pais</label></b></center>
+                        <center><b id="subtitulos1">Paises por debajo de la suscripción de <%=argv.country%></b></center>
                         <%-menores%>
                     </div>
                 </div>
@@ -61,7 +60,7 @@
                         <div class="col-md-3">
                         </div>
                         <div class="col-md-6">
-                            <center><b id="subtitulos2">TOP-5 de Suscripciones en el año <label id="anio">obtener año</label></b></center>
+                            <center><b id="subtitulos2">TOP-5 de Suscripciones en el año <%=argv.year%></b></center>
                             <%-top%>
                         </div>
                         <div class="col-md-3">

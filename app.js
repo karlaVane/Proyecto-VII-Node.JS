@@ -25,11 +25,22 @@ const menu = () => {
             console.log(`Media Global del año ${argv.year}:`.cyan, `${data.mediaGlobal}`);
             console.log("------------------------------------------------------".rainbow);
             console.log(`Suscripciones de ${argv.country}:`.cyan, `${data.mediaPais}`);
-            if (data.mediaPais > data.mediaGlobal) {
-                console.log(`La media de ${argv.country} es mayor a la media mundial`.blue);
+            var mensaje;
+            if (data.mediaPais[0] > data.mediaGlobal) {
+                mensaje = `La media de ${argv.country} es mayor a la media mundial`
+                console.log(mensaje.blue);
+            } else if (data.mediaPais[0] < data.mediaGlobal) {
+                mensaje = `La media de ${argv.country} es menor a la media mundial`
+                console.log(mensaje.red);
+            } else if (data.mediaPais[0] == "" || data.mediaGlobal == "") {
+                mensaje = "No existen datos";
+                console.log(mensaje.red);
             } else {
-                console.log(`La media de ${argv.country} es menor a la media mundial`.red);
+                mensaje = "Datos iguales";
+                console.log(mensaje.green);
             }
+
+
             console.log("------------------------------------------------------".rainbow);
             console.log(`Paises por encima de la suscripcion de ${argv.country}:`.magenta);
             console.log(data.paisesAdyacentes.mayores);
@@ -53,26 +64,27 @@ const menu = () => {
 
             menores = "<table class=\"table\"> <thead class=\"thead-dark\">";
             menores += "<tr> <th scope=\"col\"> Suscripciones</th><th scope=\"col\">País</th><th scope=\"col\">Código País</th>";
-            menores = "</tr></thead><tbody>";
+            menores += "</tr></thead><tbody>";
             data.paisesAdyacentes.menores.forEach((element) => {
                 menores = menores + "<tr>";
                 menores = menores + `<td>${element[0]}</td><td>${element[1]}</td><td>${element[2]}</td>`;
                 menores = menores + "</tr>";
             });
             menores = menores + "</tbody></table>";
-
+            //top 5
             top = "<table class=\"table\"> <thead class=\"thead-dark\">";
             top += "<tr> <th scope=\"col\"> Suscripciones</th><th scope=\"col\">País</th><th scope=\"col\">Código País</th>";
-            top = "</tr></thead><tbody>";
+            top += "</tr></thead><tbody>";
             data.top.forEach((element) => {
                 top = top + "<tr>";
                 top = top + `<td>${element[0]}</td><td>${element[1]}</td><td>${element[2]}</td>`;
                 top = top + "</tr>";
             });
             top = top + "</tbody></table>";
+
             app.use(
                 router.get("/", (req, res) => {
-                    res.render("index.html", { title: "Suscripciones a telefonía celular móvil", data: data, argv: argv, mayores: mayores, menores: menores, top: top });
+                    res.render("index.html", { title: "Suscripciones a telefonía celular móvil", mensaje: mensaje, data: data, argv: argv, mayores: mayores, menores: menores, top: top });
                 })
             );
             // static files
