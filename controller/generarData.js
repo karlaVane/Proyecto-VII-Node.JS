@@ -166,6 +166,21 @@ const _top = () => {
   return datosPorAnio;
 };
 
+/* Compara la suscripción global con la del país espeficificado */
+const compararSuscripcion = (mediaGlobal, mediaPais) => {
+  let mensaje;
+  if (mediaPais[0] > mediaGlobal) {
+    mensaje = `La media de ${mediaPais[1]} es mayor a la media mundial`;
+  } else if (mediaPais[0] < mediaGlobal) {
+    mensaje = `La media de ${mediaPais[1]} es menor a la media mundial`;
+  } else if (mediaPais[0] == "" || mediaGlobal == "") {
+    mensaje = "No existen datos";
+  } else {
+    mensaje = "Datos iguales";
+  }
+  return mensaje;
+};
+
 /* Devulve toda la data para ser consumida */
 const obtenerData = async (codPais, anio, path) => {
   await cargarDatos(path);
@@ -176,9 +191,10 @@ const obtenerData = async (codPais, anio, path) => {
   await comprobarPais(codPais);
   let mediaGlobal = _mediaMundial();
   let mediaPais = _mediaPais(codPais);
+  let mensaje = compararSuscripcion(mediaGlobal, mediaPais);
   let paisesAdyacentes = _paisesAdyacentes(mediaPais[0], codPais);
   let top = _top();
-  return { mediaGlobal, mediaPais, top, paisesAdyacentes };
+  return { mediaGlobal, mediaPais, top, paisesAdyacentes, mensaje };
 };
 
 module.exports = {
