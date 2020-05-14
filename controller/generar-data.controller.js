@@ -1,6 +1,6 @@
 const fs = require("fs");
 const neatCsv = require("neat-csv");
-const paisesValidos = require("../model/paisesValidos").paisesValidos;
+const paisesValidos = require("../model/paises-validos.model").paisesValidos;
 let informacion = [];
 let datosPorAnio = [];
 /* 
@@ -30,7 +30,7 @@ const cargarDatos = (path) => {
 };
 
 /* Carga los valores de suscripciones en la variable "datosPorAnio":object */
-const vectorPorAnio = async (anio) => {
+const vectorAnio = async (anio) => {
   let anios = Object.values(informacion[3]);
   anio = anios.indexOf(anio);
   for (let index = 4; index < informacion.length; index++) {
@@ -185,7 +185,7 @@ const compararSuscripcion = (mediaGlobal, mediaPais) => {
 const obtenerData = async (codPais, anio, path) => {
   await cargarDatos(path);
   validarNumero(anio);
-  vectorPorAnio(anio);
+  vectorAnio(anio);
   limpiarPaises();
   await comprobarAnio(anio);
   await comprobarPais(codPais);
