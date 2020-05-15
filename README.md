@@ -9,9 +9,6 @@ año específico._
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-
 ### Pre-requisitos 📋
 
 
@@ -33,6 +30,12 @@ sudo apt-get install nodejs
 
 ### Instalación 🔧
 
+_Clonar todo el repositorio con todo el contenido del proyecto_
+
+```
+git clone https://github.com/karlaVane/Proyecto-VII-Node.JS.git
+```
+
 _Instalar las dependencias utilizadas en el proyecto_
 
 _Ejecutar el siguiente comando en el terminal del sistema o en la terminal de visual studio code_
@@ -40,7 +43,6 @@ _Ejecutar el siguiente comando en el terminal del sistema o en la terminal de vi
 ```
 npm install --save
 ```
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
 ## Ejecutando las pruebas ⚙️
 
@@ -52,15 +54,16 @@ node app publicar -f="NombreDirectorio" -c="CódigoPaís" -y="Año desde 1960 ha
 ```
 node app guardar -f="NombreDirectorio" -c="CódigoPaís" -y="Año desde 1960 hasta 2018" -o="NombreNuevoArchivo"
 ```
-Primer comando es * **publicar** que tiene por parametros obligatorios a:
-   file -> alias -f: En este comando se ingresa el directorio o path donde esta ubicado los datos de las suscripciones moviles por pais.
-   country -> alias -c: En este comando se ingresa el codigo de del pais.
-   year -> alias -y: Permite especificar el año para el cual se requiere las estadísticas.
+### Comandos:
+* **publicar:** tiene por parametros obligatorios a:
+   * _file  -f_ : En este comando se ingresa el directorio o path donde esta ubicado los datos de las suscripciones moviles por pais.
+   * _country_ -> alias -c: En este comando se ingresa el codigo de del pais.
+   * _year_ -> alias -y: Permite especificar el año para el cual se requiere las estadísticas.
 
-Primer comando es * **guardar** que tiene por parametros obligatorios a:
-   file -> alias -f: En este comando se ingresa el directorio o path donde esta ubicado los datos de las suscripciones moviles por pais.
-   country -> alias -c: En este comando se ingresa el codigo de del pais .
-   year -> alias -y: En este comando permite especificar el año para el cual se requiere las estadísticas.
+* **guardar:** que tiene por parametros obligatorios a:
+   * _file_ -> alias -f: En este comando se ingresa el directorio o path donde esta ubicado los datos de las suscripciones moviles por pais.
+   * _country_ -> alias -c: En este comando se ingresa el codigo de del pais .
+   * _year_ -> alias -y: En este comando permite especificar el año para el cual se requiere las estadísticas.
    out -> alais -o: Establece el nombre del archivo donde se almacenará los resultados.
 
 ## Construido con 🛠️
