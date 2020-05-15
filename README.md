@@ -1,6 +1,6 @@
 ## Plataformas Web P56 - Proyecto Primer Parcial 
 
-_Crear una aplicación en NodeJS que permita leer los datos de las
+Aplicación en NodeJS que permite leer los datos de las
 Suscripciones a telefonía celular móvil, publicadas por el Banco
 Mundial y publicar las estadísticas de un determinado país en un
 año específico._
@@ -86,12 +86,12 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+* **Gonzales Diego** - [villanuevand](https://github.com/villanuevand)
+* **Moyón Karla** - [fulanitodetal](https://github.com/karlaVane/)
+* **Parrales Leonel** - [fulanitodetal](https://github.com/leonelparrales22)
+* **Velasco Sebastián** - [fulanitodetal](https://github.com/seguvega)
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/karlaVane/Proyecto-VII-Node.JS/graphs/contributors) quíenes han participado en este proyecto. 
 
 ## Licencia 📄
 
