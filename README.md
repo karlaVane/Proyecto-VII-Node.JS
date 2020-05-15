@@ -42,7 +42,13 @@ _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para 
 
 ## Ejecutando las pruebas ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+Para ejecutar y visualizarlo tanto en consola como en la página web hay que ejecutar el siguiente comando:
+
+```
+node app -f "NombreDirectorio" -c "País" -y "Año desde 1960 hasta 2018"
+node app
+
+```
 
 ### Analice las pruebas end-to-end 🔩
 
