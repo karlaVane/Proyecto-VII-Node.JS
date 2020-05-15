@@ -14,22 +14,31 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 ### Pre-requisitos 📋
 
- Intalación de Node.js
+
+ * **Linux**
 
 ```
 sudo apt-get install curl
 curl -sLhttps://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install nodejs
 ```
+ * **Windows**
+ 1. Instalar Visual Studio Code
+    https://code.visualstudio.com/download
+ 2. Instalar node.js
+    https://nodejs.org/es/
+ 3. Instalar la extensión del terminal en Visual Studio Code
+    En Visual Studio Code, puede abrir una terminal integrada, inicialmente comenzando en la raíz de su espacio de trabajo.
+
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Instalar las dependencias utilizadas en el proyecto_
 
-_Dí cómo será ese paso_
+_Ejecutar el siguiente comando en el terminal del sistema o en la terminal de visual studio code_
 
 ```
-Da un ejemplo
+npm install --save
 ```
 
 _Y repite_
@@ -45,10 +54,22 @@ _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para 
 Para ejecutar y visualizarlo tanto en consola como en la página web hay que ejecutar el siguiente comando:
 
 ```
-node app -f "NombreDirectorio" -c "País" -y "Año desde 1960 hasta 2018"
-node app
-
+node app publicar -f="NombreDirectorio" -c="CódigoPaís" -y="Año desde 1960 hasta 2018"
 ```
+```
+node app guardar -f="NombreDirectorio" -c="CódigoPaís" -y="Año desde 1960 hasta 2018" -o="NombreNuevoArchivo"
+```
+Primer comando es * **publicar** que tiene por parametros obligatorios a:
+   file -> alias -f: En este comando se ingresa el directorio o path donde esta ubicado los datos de las suscripciones moviles por pais.
+   country -> alias -c: En este comando se ingresa el codigo de del pais.
+   year -> alias -y: Permite especificar el año para el cual se requiere las estadísticas.
+
+Primer comando es * **guardar** que tiene por parametros obligatorios a:
+   file -> alias -f: En este comando se ingresa el directorio o path donde esta ubicado los datos de las suscripciones moviles por pais.
+   country -> alias -c: En este comando se ingresa el codigo de del pais .
+   year -> alias -y: En este comando permite especificar el año para el cual se requiere las estadísticas.
+   out -> alais -o: Establece el nombre del archivo donde se almacenará los resultados.
+
 
 ### Analice las pruebas end-to-end 🔩
 
@@ -58,13 +79,6 @@ _Explica que verifican estas pruebas y por qué_
 Da un ejemplo
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
 
 ## Despliegue 📦
 
@@ -72,23 +86,21 @@ _Agrega notas adicionales sobre como hacer deploy_
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+_Las herramientas utilizadas en el proyecto son:_
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+* [Visual Studio code](https://code.visualstudio.com/) - Editor de código fuente
+* **Librerías** 
+* [colors](https://www.npmjs.com/package/colors) - colores a la ejecucion de la terminal
+* [express](https://expressjs.com/es/) - Express es una infraestructura de aplicaciones web Node.js
+* [ejs](https://ejs.co/) - Motor de plantillas
+* [morgan](https://www.npmjs.com/package/morgan) - Middleware de registrador de solicitudes HTTP para node.js
+* [opn](https://www.npmjs.com/package/open) - Abre automáticamente el navegador al momento de ejecutar el comando publicar
+* [yargs](https://www.npmjs.com/package/yargs) - Yargs te ayuda a crear herramientas interactivas de línea de comandos, analizando argumentos y generando una elegante interfaz de usuario.
+* [neat-csv](https://www.npmjs.com/package/neat-csv) - Analizador CSV rápido
 
 ## Versionado 📌
 
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/karlaVane/Proyecto-VII-Node.JS/tags).
 
 ## Autores ✒️
 
@@ -101,16 +113,49 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia (MIT License) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
-
-
----
 ⌨️ con ❤️ por [González Diego, Moyón Karla, Parrales Leonel, Velasco Sebastián](https://github.com/karlaVane/Proyecto-VII-Node.JS) 😊
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
