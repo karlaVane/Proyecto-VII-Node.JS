@@ -86,10 +86,10 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 ## Autores ✒️
 
-* **Gonzales Diego** - [villanuevand](https://github.com/villanuevand)
-* **Moyón Karla** - [fulanitodetal](https://github.com/karlaVane/)
-* **Parrales Leonel** - [fulanitodetal](https://github.com/leonelparrales22)
-* **Velasco Sebastián** - [fulanitodetal](https://github.com/seguvega)
+* **Gonzalez Diego** - [dgonzalezq2](https://github.com/dgonzalezq2)
+* **Moyón Karla** - [karlaVanel](https://github.com/karlaVane/)
+* **Parrales Leonel** - [leonelparrales22](https://github.com/leonelparrales22)
+* **Velasco Sebastián** - [seguvega](https://github.com/seguvega)
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/karlaVane/Proyecto-VII-Node.JS/graphs/contributors) quíenes han participado en este proyecto. 
 
