@@ -40,13 +40,6 @@ _Ejecutar el siguiente comando en el terminal del sistema o en la terminal de vi
 ```
 npm install --save
 ```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
 ## Ejecutando las pruebas ⚙️
@@ -70,23 +63,9 @@ Primer comando es * **guardar** que tiene por parametros obligatorios a:
    year -> alias -y: En este comando permite especificar el año para el cual se requiere las estadísticas.
    out -> alais -o: Establece el nombre del archivo donde se almacenará los resultados.
 
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
 ## Construido con 🛠️
 
-_Las herramientas utilizadas en el proyecto son:_
+_Las herramientas utilizadas en el proyecto:_
 
 * [Visual Studio code](https://code.visualstudio.com/) - Editor de código fuente
 * **Librerías** 
@@ -116,46 +95,3 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 Este proyecto está bajo la Licencia (MIT License) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
 ⌨️ con ❤️ por [González Diego, Moyón Karla, Parrales Leonel, Velasco Sebastián](https://github.com/karlaVane/Proyecto-VII-Node.JS) 😊
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
