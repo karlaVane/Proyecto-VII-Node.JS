@@ -3,7 +3,7 @@
 Aplicación en NodeJS que permite leer los datos de las
 Suscripciones a telefonía celular móvil, publicadas por el Banco
 Mundial y publicar las estadísticas de un determinado país en un
-año específico._
+año específico.
 
 ## Comenzando 🚀
 
@@ -11,37 +11,38 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 
 ### Pre-requisitos 📋
 
+ * **Git** .- https://git-scm.com<br/><br/>
+ * **Node.js** .- https://nodejs.org. Tenga en cuenta que la versión debe ser >= 8.<br/><br/>
+   * **Linux** .- Instalar la versión en linux 12.x
+   ```
+   sudo apt-get install curl
+   curl -sLhttps://deb.nodesource.com/setup_12.x | sudo -E bash -
+   sudo apt-get install nodejs
+   ```
+   <br/>
+ * **Npm** .- Administrador de paquetes Node.js, viene con Node.js. Asegúrese de que la versión npm sea >= 5.
 
- * **Linux**
-
-```
-sudo apt-get install curl
-curl -sLhttps://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install nodejs
-```
- * **Windows**
+ <!-- * **Windows**
  1. Instalar Visual Studio Code
     https://code.visualstudio.com/download
  2. Instalar node.js
     https://nodejs.org/es/
  3. Instalar la extensión del terminal en Visual Studio Code
-    En Visual Studio Code, puede abrir una terminal integrada, inicialmente comenzando en la raíz de su espacio de trabajo.
+    En Visual Studio Code, puede abrir una terminal integrada, inicialmente comenzando en la raíz de su espacio de trabajo. -->
 
 
 ### Instalación 🔧
 
-_Clonar todo el repositorio con todo el contenido del proyecto_
+_Cuando haya completado la configuración de herramientas, debe descargar el código de la aplicación. La forma más fácil de hacerlo es clonar el repositorio de GitHub:_
 
 ```
 git clone https://github.com/karlaVane/Proyecto-VII-Node.JS.git
 ```
 
-_Instalar las dependencias utilizadas en el proyecto_
-
-_Ejecutar el siguiente comando en el terminal del sistema o en la terminal de visual studio code_
+_Una vez completado la clonación, se debe instalar los módulos npm_
 
 ```
-npm install --save
+cd Proyecto-VII-Node.JS && npm install --save
 ```
 
 ## Ejecutando las pruebas ⚙️
