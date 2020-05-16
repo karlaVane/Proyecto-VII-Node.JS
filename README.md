@@ -12,16 +12,17 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 ### Pre-requisitos 📋
 
  * **Git** .- https://git-scm.com<br/><br/>
- * **Node.js** .- https://nodejs.org. Tenga en cuenta que la versión debe ser >= 8.<br/><br/>
-   * **Linux** .- Instalar la versión en linux 12.x
+ * **Node.js** .- https://nodejs.org. Tenga en cuenta que la versión debe ser igual o superior a la versión 8.<br/><br/>
+ * **Npm** .- Administrador de paquetes Node.js, viene con Node.js. Asegúrese de que la versión npm sea igual o superior a la versión 5.
+<br/>
+<!-- 
+**Nota.-** Instalar la versión en linux 12.x
    ```
    sudo apt-get install curl
    curl -sLhttps://deb.nodesource.com/setup_12.x | sudo -E bash -
    sudo apt-get install nodejs
-   ```
-   <br/>
- * **Npm** .- Administrador de paquetes Node.js, viene con Node.js. Asegúrese de que la versión npm sea >= 5.
-
+   ``` -->
+   
  <!-- * **Windows**
  1. Instalar Visual Studio Code
     https://code.visualstudio.com/download
@@ -47,14 +48,47 @@ cd Proyecto-VII-Node.JS && npm install --save
 
 ## Ejecutando las pruebas ⚙️
 
-Para ejecutar y visualizarlo tanto en consola como en la página web hay que ejecutar el siguiente comando:
+Descargar la data de la siguiente dirección web: [Suscripciones a telefonía celular móvil](http://api.worldbank.org/v2/es/indicator/IT.CEL.SETS?downloadformat=csv)
 
+
+Para ejecutar y visualizar los resultados en consola y página web, se deberá ingresar los parámetros según el comando:
 ```
 node app publicar -f="NombreDirectorio" -c="CódigoPaís" -y="Año desde 1960 hasta 2018"
 ```
 ```
 node app guardar -f="NombreDirectorio" -c="CódigoPaís" -y="Año desde 1960 hasta 2018" -o="NombreNuevoArchivo"
 ```
+
+1. **Nombre de directorio.-** Se deberá ingresar la ruta donde se encuentra ubicado el archivo de la data descargada.
+
+```
+"/home/Downloads/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv" 
+```
+
+2. **Codigo del Pais.-** País a analizar a través de su código [ISO 3166 ALPHA-3](https://laendercode.net/es/3-letter-list.html).
+
+```
+"ECU" 
+```
+3. **Año.-** Desde 1960 hasta 2018
+```
+1997 
+```
+
+4. **Nombre del nuevo archivo.-** Establece el nombre del archivo donde se almacenará
+los resultados en formato JSON.
+```
+Resultados
+```
+
+**Ejemplos:**
+```
+node app.js publicar -f="/home/Downloads/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv"  -c="ECU" -y=1997
+```
+```
+node app.js guardar -f="/home/Downloads/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv" -c="ECU" -y=1997 -o="Resultados"
+```
+**Nota:** En caso de no abrir automáticamente el servidor local, acceder a: http://localhost:3000/
 ### Comandos:
 * **publicar:** tiene por parametros obligatorios a:
    * _file  -f_ : En este comando se ingresa el directorio o path donde esta ubicado los datos de las suscripciones moviles por pais.
