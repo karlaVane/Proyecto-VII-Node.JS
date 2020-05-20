@@ -88,7 +88,11 @@ node app.js publicar -f="/home/Downloads/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.c
 ```
 node app.js guardar -f="/home/Downloads/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv" -c="ECU" -y=1997 -o="Resultados"
 ```
-**Ejecución:**
+
+**NOTA:** En caso de no abrir automáticamente el servidor local, acceder a: http://localhost:3000/
+<br>
+
+### **Ejecución:**
 * **Comando publicar:**
 **Ejecución en consola:**
 <center><img src="eje_consola.PNG" ><br></center>
@@ -105,7 +109,7 @@ node app.js guardar -f="/home/Downloads/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.cs
 **Archivo json guardado:**
 <center><img src="guardar2.PNG" ><br></center>
 
-**NOTA:** En caso de no abrir automáticamente el servidor local, acceder a: http://localhost:3000/
+
 ### Comandos:
 * **publicar:** tiene por parametros obligatorios a:
    * _file  -f_ : En este comando se ingresa el directorio o path donde esta ubicado los datos de las suscripciones moviles por pais.
