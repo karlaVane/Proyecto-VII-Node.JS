@@ -76,9 +76,9 @@ node app guardar -f="NombreDirectorio" -c="CódigoPaís" -y="Año desde 1960 has
 ```
 
 4. **Nombre del nuevo archivo.-** Establece el nombre del archivo donde se almacenará
-los resultados en formato JSON.
+los resultados en formato JSON. El archivo generado se guardará en la carpeta "./resultados"
 ```
-Resultados
+resultados/nombreArchivo.json
 ```
 
 **Ejemplos:**
