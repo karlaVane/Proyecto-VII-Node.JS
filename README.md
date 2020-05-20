@@ -88,7 +88,24 @@ node app.js publicar -f="/home/Downloads/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.c
 ```
 node app.js guardar -f="/home/Downloads/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv" -c="ECU" -y=1997 -o="Resultados"
 ```
-**Nota:** En caso de no abrir automáticamente el servidor local, acceder a: http://localhost:3000/
+**Ejecución:**
+* **Comando publicar:**
+**Ejecución en consola:**
+<center><img src="eje_consola.PNG" ><br></center>
+
+**Ejecución en navegador:**
+<center><img src="eje_nav1.PNG" ><br>
+<img src="eje_nav2.PNG" ><br>
+<img src="eje_nav3.PNG" ><br></center>
+
+* **Comando guardar:**
+**Ejecución en consola:**
+<center><img src="guardar1.PNG" ><br></center>
+
+**Archivo json guardado:**
+<center><img src="guardar2.PNG" ><br></center>
+
+**NOTA:** En caso de no abrir automáticamente el servidor local, acceder a: http://localhost:3000/
 ### Comandos:
 * **publicar:** tiene por parametros obligatorios a:
    * _file  -f_ : En este comando se ingresa el directorio o path donde esta ubicado los datos de las suscripciones moviles por pais.
@@ -106,7 +123,7 @@ node app.js guardar -f="/home/Downloads/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.cs
 _Las herramientas utilizadas en el proyecto:_
 
 * [Visual Studio code](https://code.visualstudio.com/) - Editor de código fuente
-* **Librerías** 
+**Librerías** 
 * [colors](https://www.npmjs.com/package/colors) - colores a la ejecucion de la terminal
 * [express](https://expressjs.com/es/) - Express es una infraestructura de aplicaciones web Node.js
 * [ejs](https://ejs.co/) - Motor de plantillas
