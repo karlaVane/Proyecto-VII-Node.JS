@@ -90,6 +90,7 @@ node app.js guardar -f="/home/Downloads/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.cs
 ```
 
 **NOTA:** En caso de no abrir automáticamente el servidor local, acceder a: http://localhost:3000/
+
 <br>
 
 ### **Ejecución:**
@@ -111,16 +112,18 @@ node app.js guardar -f="/home/Downloads/API_IT.CEL.SETS_DS2_es_csv_v2_1004854.cs
 
 
 ### Comandos:
-* **publicar:** tiene por parametros obligatorios a:
+* **publicar:** Tiene por parametros obligatorios a:
    * _file  -f_ : En este comando se ingresa el directorio o path donde esta ubicado los datos de las suscripciones moviles por pais.
-   * _country_ -> alias -c: En este comando se ingresa el codigo de del pais.
-   * _year_ -> alias -y: Permite especificar el año para el cual se requiere las estadísticas.
+   * _country -c_: En este comando se ingresa el codigo de del pais.
+   * _year -y_: Permite especificar el año para el cual se requiere las estadísticas.
 
-* **guardar:** que tiene por parametros obligatorios a:
-   * _file_ -> alias -f: En este comando se ingresa el directorio o path donde esta ubicado los datos de las suscripciones moviles por pais.
-   * _country_ -> alias -c: En este comando se ingresa el codigo de del pais .
-   * _year_ -> alias -y: En este comando permite especificar el año para el cual se requiere las estadísticas.
-   out -> alais -o: Establece el nombre del archivo donde se almacenará los resultados.
+<br>
+
+* **guardar:** Tiene por parametros obligatorios a:
+   * _file -f_: En este comando se ingresa el directorio o path donde esta ubicado los datos de las suscripciones moviles por pais.
+   * _country -c_: En este comando se ingresa el codigo de del pais .
+   * _year -y_: En este comando permite especificar el año para el cual se requiere las estadísticas.
+   * _out -o_: Establece el nombre del archivo donde se almacenará los resultados.
 
 ## Construido con 🛠️
 
